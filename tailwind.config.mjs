@@ -7,7 +7,7 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['var(--font-unbounded-sans)', ...fontFamily.primary],
+        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
       },
     },
   },
