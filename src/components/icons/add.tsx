@@ -12,7 +12,7 @@ export const AddIcon: React.FC<IconProps> = ({ className }) => {
     >
       <path
         d="M7 12L12 12M12 12L17 12M12 12V7M12 12L12 17"
-        stroke="black"
+        stroke="currentColor"
         stroke-width="2"
         stroke-linejoin="round"
       />

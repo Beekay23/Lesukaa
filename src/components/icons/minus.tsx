@@ -12,7 +12,7 @@ export const MinusIcon: React.FC<IconProps> = ({ className }) => {
     >
       <path
         d="M12.8334 22L31.1667 22"
-        stroke="white"
+        stroke="currentColor"
         stroke-width="4"
         stroke-linejoin="round"
       />
