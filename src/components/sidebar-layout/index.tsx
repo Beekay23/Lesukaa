@@ -19,13 +19,15 @@ interface ProductSubcategory {
 interface SidebarLayoutProps {
   navItems: NavItemProps[];
   productCategories: ProductCategory[];
+  isLoading: boolean;
   onSearch: (query: string) => void;
 }
 
 export const SidebarLayout: React.FC<SidebarLayoutProps> = ({
   navItems,
   productCategories,
-  onSearch
+  isLoading,
+  onSearch,
 }) => {
   return (
     <div className="flex flex-col md:flex-row bg-gray-50 min-h-screen">
@@ -36,20 +38,32 @@ export const SidebarLayout: React.FC<SidebarLayoutProps> = ({
       </aside>
 
       <main className="flex-1">
-        <div className="sticky top-0 z-10 bg-white shadow-sm">
-          <div>
-            <SearchBar onSearch={onSearch} />
+        <div className="hidden sticky top-0 z-10 bg-white shadow-sm lg:block">
+          <div className="sticky top-0 z-10 bg-white shadow-sm py-3 sm:py-4">
+            <SearchBar isLoading={isLoading} onSearch={onSearch} />
           </div>
         </div>
         <div className="overflow-y-auto">
-          <div className="p-4 sm:p-6 md:p-8">
+          <div className="p-6 md:p-8">
             <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12 md:space-y-16">
-              {productCategories.map((category, categoryIndex) => (
-                <ProductCategorySection
-                  key={`${category.title}-${categoryIndex}`}
-                  category={category}
-                />
-              ))}
+              {isLoading ? (
+                <div className="py-8 text-center">
+                  <div className="w-8 h-8 border-2 border-[#029E1F] border-t-transparent rounded-full animate-spin mx-auto" />
+                </div>
+              ) : productCategories.length === 0 ? (
+                <div className="py-8 text-center">
+                  <p className="text-gray-500 text-lg">
+                    No items found. Try a different search term.
+                  </p>
+                </div>
+              ) : (
+                productCategories.map((category, categoryIndex) => (
+                  <ProductCategorySection
+                    key={`${category.title}-${categoryIndex}`}
+                    category={category}
+                  />
+                ))
+              )}
             </div>
           </div>
         </div>
@@ -63,7 +77,7 @@ interface ProductCategorySectionProps {
 }
 
 const ProductCategorySection: React.FC<ProductCategorySectionProps> = ({
-  category
+  category,
 }) => (
   <section id={toSlug(category.title)}>
     <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 sm:mb-6 md:mb-8">
@@ -86,7 +100,7 @@ interface ProductSubcategorySectionProps {
 }
 
 const ProductSubcategorySection: React.FC<ProductSubcategorySectionProps> = ({
-  subcategory
+  subcategory,
 }) => (
   <div id={toSlug(subcategory.title)}>
     <h2 className="text-lg sm:text-xl md:text-2xl font-medium text-gray-700 mb-3 sm:mb-4 md:mb-6">

@@ -3,21 +3,25 @@
 import React from "react";
 
 export interface CardProps {
-  id: string;
   name: string;
-  price: number;
+  price?: number;
+  slug?: string;
+  id?: string | number;
 }
 
-export interface GridListProps {
+interface GridListProps {
   items: CardProps[];
 }
 
-export const GridList: React.FC<GridListProps> = ({ items }) => {
-  return (
+export const GridList: React.FC<GridListProps> = ({ items = [] }) => {
+ return (
     <div className="py-3 sm:py-4">
       <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
-        {items.map((item) => (
-          <Card key={item.id} item={item} />
+        {items.map((item, index) => (
+          <Card
+            key={item.id || `${item.name}-${index}`}
+            item={item}
+          />
         ))}
       </div>
     </div>
@@ -25,6 +29,8 @@ export const GridList: React.FC<GridListProps> = ({ items }) => {
 };
 
 const Card: React.FC<{ item: CardProps }> = ({ item }) => {
+  if (!item) return null;
+
   return (
     <div className="overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
       <div className="relative h-40 sm:h-48 md:h-56 overflow-hidden bg-gray-100">
@@ -45,8 +51,12 @@ const Card: React.FC<{ item: CardProps }> = ({ item }) => {
         </div>
       </div>
       <div className="p-3 sm:p-4">
-        <h3 className="text-base sm:text-lg font-medium text-gray-900 line-clamp-2">{item.name}</h3>
-        <p className="mt-1 text-sm sm:text-base text-gray-500 font-medium">₦{item.price.toLocaleString()}</p>
+        <h3 className="text-base sm:text-lg font-medium text-gray-900 line-clamp-2">
+          {item.name || 'Untitled Item'}
+        </h3>
+        <p className="mt-1 text-sm sm:text-base text-gray-500 font-medium">
+          {item.price ? `₦${item.price.toLocaleString()}` : 'Price not available'}
+        </p>
       </div>
     </div>
   );

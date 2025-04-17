@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { BackToTop } from '@/components/back-to-top';
 
 const interSans = Inter({
   variable: "--font-sans",
@@ -23,6 +24,7 @@ export default function RootLayout({
         className={`${interSans.variable} antialiased`}
       >
         {children}
+        <BackToTop />
       </body>
     </html>
   );

@@ -9,6 +9,8 @@ import { useState, useMemo } from "react";
 export default function Home() {
   const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
   const [isSearching, setIsSearching] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [filteredItems, setFilteredItems] = useState<SearchResult[]>([]);
 
   const products = useMemo(() => getProducts(), []);
 
@@ -49,27 +51,39 @@ export default function Home() {
 
   const sidebarItems = useMemo(() => [foodCategories, drinkCategories], [foodCategories, drinkCategories]);
 
-  const handleSearch = (query: string) => {
-    if (!query || typeof query !== 'string') {
-      setIsSearching(false);
-      setSearchResults([]);
-      return;
-    }
+  const handleSearch = async (query: string) => {
+    setIsLoading(true);
+    try {
+      if (!query || typeof query !== 'string') {
+        setIsSearching(false);
+        setSearchResults([]);
+        setFilteredItems([]);
+        return;
+      }
 
-    const trimmedQuery = query.trim();
-    if (trimmedQuery) {
-      setIsSearching(true);
-      const results = searchItems(trimmedQuery);
-      setSearchResults(results);
-    } else {
-      setIsSearching(false);
-      setSearchResults([]);
+      const trimmedQuery = query.trim();
+      if (trimmedQuery) {
+        setIsSearching(true);
+        const results = searchItems(trimmedQuery);
+        setSearchResults(results);
+        setFilteredItems(results);
+      } else {
+        setIsSearching(false);
+        setSearchResults([]);
+        setFilteredItems([]);
+      }
+    } finally {
+      setIsLoading(false);
     }
   };
 
   return (
     <div>
-      <Header navItems={sidebarItems} />
+      <Header
+        navItems={sidebarItems}
+        onSearch={handleSearch}
+        isLoading={isLoading}
+      />
       <PageHeading />
       <div>
         <div>
@@ -77,6 +91,7 @@ export default function Home() {
             navItems={sidebarItems}
             productCategories={isSearching ? searchResults : productCategories}
             onSearch={handleSearch}
+            isLoading={isLoading}
           />
         </div>
       </div>

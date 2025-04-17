@@ -5,33 +5,46 @@ import Link from "next/link";
 import { Logo } from "../logo";
 import { MenuIcon, CloseIcon } from "../icons";
 import { SidebarNavigation, NavItemProps } from "../sidebar-navigation";
+import { SearchBar } from "../search-bar";
 
 interface HeaderProps {
   navItems: NavItemProps[];
   phoneNumbers?: string[];
   companyName?: string;
+  isLoading?: boolean;
+  onSearch?: (query: string) => void;
 }
 
 const PHONE_NUMBERS = ["+234 9016109171", "+234 7057554472"];
 const COMPANY_NAME = "Your Company Name";
 
 export const Header: React.FC<HeaderProps> = ({
-  navItems,
+  navItems = [],
   phoneNumbers = PHONE_NUMBERS,
   companyName = COMPANY_NAME,
+  onSearch,
 }) => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = useCallback(() => {
-    setMobileMenuOpen((prev) => !prev);
+    setMobileMenuOpen(prev => !prev);
   }, []);
 
   const closeMobileMenu = useCallback(() => {
     setMobileMenuOpen(false);
   }, []);
 
+  const handleOverlayClick = useCallback((e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) {
+      closeMobileMenu();
+    }
+  }, [closeMobileMenu]);
+
   return (
-    <header className="bg-white shadow-sm" role="banner">
+    <header
+      className="bg-white shadow-sm sticky lg:static top-0 z-50"
+      role="banner"
+    >
       <div className="mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           <MobileMenuButton
@@ -48,6 +61,12 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
         </div>
 
+        {onSearch && (
+          <div className="lg:hidden mt-4">
+            <SearchBar onSearch={onSearch} />
+          </div>
+        )}
+
         <MobileMenu
           isOpen={isMobileMenuOpen}
           onClose={closeMobileMenu}
@@ -57,7 +76,7 @@ export const Header: React.FC<HeaderProps> = ({
 
         <MobileMenuOverlay
           isOpen={isMobileMenuOpen}
-          onClick={closeMobileMenu}
+          onClick={handleOverlayClick}
         />
       </div>
     </header>
@@ -126,7 +145,7 @@ const LogoLink: React.FC<LogoLinkProps> = ({ companyName }) => (
 
 const OrderButton: React.FC = () => (
   <Link
-    href="#"
+    href="https://wa.link/12rgpr"
     className="bg-[#029E1F] text-white rounded-lg px-4 py-2 font-medium hover:bg-[#029E1F]/80 text-base transition-colors duration-200"
   >
     Order Now
@@ -148,7 +167,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
 }) => (
   <div
     id="mobile-menu"
-    className={`lg:hidden fixed top-0 left-0 h-full w-[70%] bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${
+    className={`lg:hidden fixed top-0 left-0 h-full w-[80%] bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${
       isOpen ? "translate-x-0" : "-translate-x-full"
     }`}
     aria-label="Mobile navigation"
@@ -180,7 +199,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
 
 interface MobileMenuOverlayProps {
   isOpen: boolean;
-  onClick: () => void;
+  onClick: (e: React.MouseEvent) => void;
 }
 
 const MobileMenuOverlay: React.FC<MobileMenuOverlayProps> = ({
