@@ -181,12 +181,12 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
         <CloseIcon className="text-gray-700" />
       </button>
 
-      <nav className="mt-8 space-y-2">
+      <nav className="mt-8 space-y-1">
         {phoneNumbers.map((number, index) => (
           <a
             key={index}
             href={`tel:${number.replace(/\s+/g, "")}`}
-            className="flex items-center gap-2 font-medium text-base py-2"
+            className="flex items-center gap-2 font-medium text-sm py-2"
           >
             <span className="text-[#a2a2a2]">{number}</span>
           </a>

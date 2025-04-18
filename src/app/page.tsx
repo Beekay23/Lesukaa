@@ -32,7 +32,8 @@ export default function Home() {
         items: category.items.map((item, index) => ({
           id: `food-${category.title}-${index}`,
           name: item.name,
-          price: item.price
+          price: item.price,
+          imageURL: item.imageURL,
         }))
       }))
     },
@@ -43,7 +44,8 @@ export default function Home() {
         items: category.items.map((item, index) => ({
           id: `drinks-${category.title}-${index}`,
           name: item.name,
-          price: item.price
+          price: item.price,
+          imageURL: item.imageURL,
         }))
       }))
     }

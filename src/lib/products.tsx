@@ -4,6 +4,7 @@ import { drinks } from "@/data/drinks";
 export interface Category {
   title: string;
   items: Array<{
+    imageURL: string;
     name: string;
     price: number;
   }>;
