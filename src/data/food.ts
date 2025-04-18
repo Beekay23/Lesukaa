@@ -183,12 +183,7 @@ export const food = [
       {
         name: "Pepper Beef",
         price: 3000,
-        imageURL: "/food/starters/pepper-beef.jpg",
-      },
-      {
-        name: "Pepper Assorted",
-        price: 2000,
-        imageURL: "/food/starters/pepper-assorted.jpg",
+        imageURL: "/food/starters/pepper-beef.png",
       },
       {
         name: "Goat Meat Peppersoup/Yam",
@@ -201,23 +196,22 @@ export const food = [
     title: "Protein",
     items: [
       { name: "Dry Fish", price: 2500, imageURL: "/food/protein/dry-fish.jpg" },
-      { name: "Cowtail", price: 2500, imageURL: "/food/protein/cowtail.jpg" },
+      { name: "Cowtail", price: 2500, imageURL: "/food/protein/cowtail.png" },
       {
         name: "Goat Meat",
         price: 1500,
-        imageURL: "/food/protein/goat-meat.jpg",
+        imageURL: "/food/protein/goat-meat.png",
       },
-      { name: "Snail", price: 1500, imageURL: "/food/protein/snail.jpg" },
-      { name: "Beef", price: 1500, imageURL: "/food/protein/beef.jpg" },
-      { name: "Chicken", price: 3000, imageURL: "/food/protein/chicken.jpg" },
+      { name: "Snail", price: 1500, imageURL: "/food/protein/snail.png" },
+      { name: "Beef", price: 1500, imageURL: "/food/protein/beef.png" },
+      { name: "Chicken", price: 3000, imageURL: "/food/protein/chicken.png" },
       {
         name: "Crocker Fish",
         price: 3500,
-        imageURL: "/food/protein/crocker-fish.jpg",
+        imageURL: "/food/protein/crocker-fish.png",
       },
-      { name: "Turkey", price: 5500, imageURL: "/food/protein/turkey.jpg" },
-      { name: "Gizzard", price: 2500, imageURL: "/food/protein/gizzard.jpg" },
-      { name: "Assorted", price: 2000, imageURL: "/food/protein/assorted.jpg" },
+      { name: "Turkey", price: 5500, imageURL: "/food/protein/turkey.png" },
+      { name: "Gizzard", price: 2500, imageURL: "/food/protein/gizzard.png" },
     ],
   },
   {
@@ -258,20 +252,20 @@ export const food = [
         price: 1000,
         imageURL: "/food/national/banga-stew.jpg",
       },
-      { name: "Ukwa", price: 2500, imageURL: "/food/national/ukwa.jpg" },
+      { name: "Ukwa", price: 2500, imageURL: "/food/national/ukwa.png" },
     ],
   },
   {
     title: "Swallow",
     items: [
-      { name: "Garri", price: 700, imageURL: "/food/swallow/garri.jpg" },
+      { name: "Garri", price: 700, imageURL: "/food/swallow/garri.png" },
       {
         name: "Pounded Yam",
         price: 1800,
         imageURL: "/food/swallow/pounded-yam.jpg",
       },
-      { name: "Oat Meal", price: 1800, imageURL: "/food/swallow/oat-meal.jpg" },
-      { name: "Semo", price: 1000, imageURL: "/food/swallow/semo.jpg" },
+      { name: "Oat Meal", price: 1800, imageURL: "/food/swallow/oat-meal.png" },
+      { name: "Semo", price: 1000, imageURL: "/food/swallow/semo.png" },
     ],
   },
   {
@@ -280,12 +274,12 @@ export const food = [
       {
         name: "Abacha/Fish/Canda",
         price: 3400,
-        imageURL: "/food/african-dish/abacha-fish-canda.jpg",
+        imageURL: "/food/african-dish/abacha-fish-canda.png",
       },
       {
         name: "Tray of Abacha",
         price: 37000,
-        imageURL: "/food/african-dish/tray-of-abacha.jpg",
+        imageURL: "/food/african-dish/tray-of-abacha.png",
       },
       {
         name: "Half Tray of Abacha",
@@ -295,17 +289,17 @@ export const food = [
       {
         name: "Abacha with Fish",
         price: 3000,
-        imageURL: "/food/african-dish/abacha-with-fish.jpg",
+        imageURL: "/food/african-dish/abacha-with-fish.png",
       },
       {
         name: "Abacha with Canda",
         price: 1900,
-        imageURL: "/food/african-dish/abacha-with-canda.jpg",
+        imageURL: "/food/african-dish/abacha-with-canda.png",
       },
       {
         name: "Only Abacha",
         price: 1500,
-        imageURL: "/food/african-dish/only-abacha.jpg",
+        imageURL: "/food/african-dish/only-abacha.png",
       },
       {
         name: "Ugba and Fish",
@@ -315,14 +309,14 @@ export const food = [
       {
         name: "Only Ugba",
         price: 1000,
-        imageURL: "/food/african-dish/only-ugba.jpg",
+        imageURL: "/food/african-dish/only-ugba.png",
       },
       {
         name: "Extra Fish",
         price: 1500,
-        imageURL: "/food/african-dish/extra-fish.jpg",
+        imageURL: "/food/african-dish/extra-fish.png",
       },
-      { name: "Canda", price: 400, imageURL: "/food/african-dish/canda.jpg" },
+      { name: "Canda", price: 400, imageURL: "/food/african-dish/canda.png" },
       {
         name: "Nkwobi",
         price: 6000,
@@ -331,12 +325,12 @@ export const food = [
       {
         name: "Isi-Ewu",
         price: 8000,
-        imageURL: "/food/african-dish/isi-ewu.jpg",
+        imageURL: "/food/african-dish/isi-ewu.png",
       },
       {
         name: "Chicken Nkwobi",
         price: 12500,
-        imageURL: "/food/african-dish/chicken-nkwobi.jpg",
+        imageURL: "/food/african-dish/chicken-nkwobi.png",
       },
     ],
   },

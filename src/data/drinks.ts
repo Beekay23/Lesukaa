@@ -35,12 +35,12 @@ export const drinks = [
       {
         name: "Azul",
         price: 500000,
-        imageURL: "/drinks/whisky-liquor-vodka/azul.jpg",
+        imageURL: "/drinks/whisky-liquor-vodka/azul.png",
       },
       {
         name: "Blue Label",
         price: 750000,
-        imageURL: "/drinks/whisky-liquor-vodka/blue-label.jpg",
+        imageURL: "/drinks/whisky-liquor-vodka/blue-label.png",
       },
       {
         name: "Macallan 15 Years",
@@ -70,7 +70,7 @@ export const drinks = [
       {
         name: "Gold Label",
         price: 115000,
-        imageURL: "/drinks/whisky-liquor-vodka/gold-label.jpg",
+        imageURL: "/drinks/whisky-liquor-vodka/gold-label.png",
       },
       {
         name: "Glenfiddich 12 Years",
@@ -80,7 +80,7 @@ export const drinks = [
       {
         name: "Black Label (Big)",
         price: 78000,
-        imageURL: "/drinks/whisky-liquor-vodka/black-label-big.jpg",
+        imageURL: "/drinks/whisky-liquor-vodka/black-label-big.png",
       },
       {
         name: "Casa Reposado",
@@ -95,7 +95,7 @@ export const drinks = [
       {
         name: "Red Label",
         price: 37500,
-        imageURL: "/drinks/whisky-liquor-vodka/red-label.jpg",
+        imageURL: "/drinks/whisky-liquor-vodka/red-label.png",
       },
       {
         name: "Jameson Black Barrel",
@@ -125,7 +125,7 @@ export const drinks = [
       {
         name: "John Bannerman's",
         price: 25000,
-        imageURL: "/drinks/whisky-liquor-vodka/john-bannermans.jpg",
+        imageURL: "/drinks/whisky-liquor-vodka/john-bannermans.png",
       },
       {
         name: "Lakes The One",
@@ -140,7 +140,7 @@ export const drinks = [
       {
         name: "White Walker",
         price: 40000,
-        imageURL: "/drinks/whisky-liquor-vodka/white-walker.jpg",
+        imageURL: "/drinks/whisky-liquor-vodka/white-walker.png",
       },
       {
         name: "Jager Meister",
@@ -150,12 +150,12 @@ export const drinks = [
       {
         name: "American Honey",
         price: 42500,
-        imageURL: "/drinks/whisky-liquor-vodka/american-honey.jpg",
+        imageURL: "/drinks/whisky-liquor-vodka/american-honey.png",
       },
       {
         name: "Chinese Drink (Big)",
         price: 15000,
-        imageURL: "/drinks/whisky-liquor-vodka/chinese-drink-big.jpg",
+        imageURL: "/drinks/whisky-liquor-vodka/chinese-drink-big.png",
       },
       {
         name: "Gordon Gin (Big)",
@@ -170,12 +170,12 @@ export const drinks = [
       {
         name: "Captain Morgan (Big)",
         price: 10500,
-        imageURL: "/drinks/whisky-liquor-vodka/captain-morgan-big.jpg",
+        imageURL: "/drinks/whisky-liquor-vodka/captain-morgan-big.png",
       },
       {
         name: "Captain Morgan (Small)",
         price: 4500,
-        imageURL: "/drinks/whisky-liquor-vodka/captain-morgan-small.jpg",
+        imageURL: "/drinks/whisky-liquor-vodka/captain-morgan-small.png",
       },
       {
         name: "Smirnoff Vodka (Big)",
@@ -190,7 +190,7 @@ export const drinks = [
       {
         name: "Black & White",
         price: 30000,
-        imageURL: "/drinks/whisky-liquor-vodka/black-white.jpg",
+        imageURL: "/drinks/whisky-liquor-vodka/black-white.png",
       },
       {
         name: "Single Grain (Teeling)",
@@ -220,7 +220,7 @@ export const drinks = [
       {
         name: "Martel Character",
         price: 75000,
-        imageURL: "/drinks/cognac-brandy/martel-character.jpg",
+        imageURL: "/drinks/cognac-brandy/martel-character.png",
       },
       {
         name: "Martel Blue Swift",
@@ -235,12 +235,12 @@ export const drinks = [
       {
         name: "Divin Bardar XO",
         price: 12000,
-        imageURL: "/drinks/cognac-brandy/divin-bardar-xo.jpg",
+        imageURL: "/drinks/cognac-brandy/divin-bardar-xo.png",
       },
       {
         name: "Singleton",
         price: 100000,
-        imageURL: "/drinks/cognac-brandy/singleton.jpg",
+        imageURL: "/drinks/cognac-brandy/singleton.png",
       },
     ],
   },
@@ -250,7 +250,7 @@ export const drinks = [
       {
         name: "Tequila",
         price: 45000,
-        imageURL: "/drinks/tequila/tequila.jpg",
+        imageURL: "/drinks/tequila/tequila.png",
       },
     ],
   },
@@ -280,7 +280,7 @@ export const drinks = [
       {
         name: "Famous Grouse",
         price: 25000,
-        imageURL: "/drinks/aperitif-sparkling-wines/famous-grouse.jpg",
+        imageURL: "/drinks/aperitif-sparkling-wines/famous-grouse.png",
       },
       {
         name: "Baileys (Big)",
@@ -295,22 +295,22 @@ export const drinks = [
       {
         name: "Best (Big)",
         price: 10000,
-        imageURL: "/drinks/aperitif-sparkling-wines/best-big.jpg",
+        imageURL: "/drinks/aperitif-sparkling-wines/best-big.png",
       },
       {
         name: "Vino Gano",
         price: 2000,
-        imageURL: "/drinks/aperitif-sparkling-wines/vino-gano.jpg",
+        imageURL: "/drinks/aperitif-sparkling-wines/vino-gano.png",
       },
       {
         name: "Oosa Bitters",
         price: 1500,
-        imageURL: "/drinks/aperitif-sparkling-wines/oosa-bitters.jpg",
+        imageURL: "/drinks/aperitif-sparkling-wines/oosa-bitters.png",
       },
       {
         name: "Casoni Bitter",
         price: 10000,
-        imageURL: "/drinks/aperitif-sparkling-wines/casoni-bitter.jpg",
+        imageURL: "/drinks/aperitif-sparkling-wines/casoni-bitter.png",
       },
       {
         name: "Origin Bitters (Small)",
@@ -320,12 +320,12 @@ export const drinks = [
       {
         name: "1960 (Big)",
         price: 5000,
-        imageURL: "/drinks/aperitif-sparkling-wines/1960-big.jpg",
+        imageURL: "/drinks/aperitif-sparkling-wines/1960-big.png",
       },
       {
         name: "1960 (Small)",
         price: 2000,
-        imageURL: "/drinks/aperitif-sparkling-wines/1960-small.jpg",
+        imageURL: "/drinks/aperitif-sparkling-wines/1960-small.png",
       },
       {
         name: "Ace Bitters",
@@ -335,7 +335,7 @@ export const drinks = [
       {
         name: "Odongwu Bitters",
         price: 2000,
-        imageURL: "/drinks/aperitif-sparkling-wines/odongwu-bitters.jpg",
+        imageURL: "/drinks/aperitif-sparkling-wines/odongwu-bitters.png",
       },
     ],
   },
@@ -345,12 +345,12 @@ export const drinks = [
       {
         name: "Terramagna Wine (Red/White)",
         price: 20000,
-        imageURL: "/drinks/wines/terramagna-wine.jpg",
+        imageURL: "/drinks/wines/terramagna-wine-red-white.png",
       },
       {
         name: "Escudo Rojo",
         price: 35000,
-        imageURL: "/drinks/wines/escudo-rojo.jpg",
+        imageURL: "/drinks/wines/escudo-rojo.png",
       },
       {
         name: "Carlo Rossi Red",
@@ -360,14 +360,14 @@ export const drinks = [
       {
         name: "Carlo Rossi Ice",
         price: 20000,
-        imageURL: "/drinks/wines/carlo-rossi-ice.jpg",
+        imageURL: "/drinks/wines/carlo-rossi-ice.png",
       },
       {
         name: "Night Train",
         price: 20000,
-        imageURL: "/drinks/wines/night-train.jpg",
+        imageURL: "/drinks/wines/night-train.png",
       },
-      { name: "Agor", price: 20000, imageURL: "/drinks/wines/agor.jpg" },
+      { name: "Agor", price: 20000, imageURL: "/drinks/wines/agor.png" },
       {
         name: "Martinellis",
         price: 20000,
@@ -377,12 +377,12 @@ export const drinks = [
       {
         name: "Dominion Red",
         price: 20000,
-        imageURL: "/drinks/wines/dominion-red.jpg",
+        imageURL: "/drinks/wines/dominion-red.png",
       },
       {
         name: "Dominion Rose",
         price: 20000,
-        imageURL: "/drinks/wines/dominion-rose.jpg",
+        imageURL: "/drinks/wines/dominion-rose.png",
       },
       {
         name: "Mateus Rose",
@@ -397,7 +397,7 @@ export const drinks = [
       {
         name: "Shiraz Red/Rose",
         price: 20000,
-        imageURL: "/drinks/wines/shiraz.jpg",
+        imageURL: "/drinks/wines/shiraz.png",
       },
       {
         name: "Four Cousins (Small)",
@@ -410,7 +410,7 @@ export const drinks = [
         imageURL: "/drinks/wines/brown-brother-rose.jpg",
       },
       { name: "Merlot", price: 20000, imageURL: "/drinks/wines/merlot.jpg" },
-      { name: "Adelisa", price: 20000, imageURL: "/drinks/wines/adelisa.jpg" },
+      { name: "Adelisa", price: 20000, imageURL: "/drinks/wines/adelisa.png" },
       {
         name: "Declan Wine",
         price: 20000,
@@ -419,7 +419,7 @@ export const drinks = [
       {
         name: "Don Venice",
         price: 20000,
-        imageURL: "/drinks/wines/don-venice.jpg",
+        imageURL: "/drinks/wines/don-venice.png",
       },
       {
         name: "Brown Brother Red",
@@ -434,22 +434,22 @@ export const drinks = [
       {
         name: "Augostura Reserva",
         price: 20000,
-        imageURL: "/drinks/wines/augostura-reserva.jpg",
+        imageURL: "/drinks/wines/augostura-reserva.png",
       },
       {
         name: "Amarodi Augostura",
         price: 25000,
-        imageURL: "/drinks/wines/amarodi-augostura.jpg",
+        imageURL: "/drinks/wines/amarodi-augostura.png",
       },
       {
         name: "Leon Wine",
         price: 20000,
-        imageURL: "/drinks/wines/leon-wine.jpg",
+        imageURL: "/drinks/wines/leon-wine.png",
       },
       {
         name: "Sun Chasser",
         price: 20000,
-        imageURL: "/drinks/wines/sun-chasser.jpg",
+        imageURL: "/drinks/wines/sun-chasser.png",
       },
       {
         name: "Wave Dancer",
@@ -459,7 +459,7 @@ export const drinks = [
       {
         name: "Star Chasser",
         price: 20000,
-        imageURL: "/drinks/wines/star-chasser.jpg",
+        imageURL: "/drinks/wines/star-chasser.png",
       },
       {
         name: "Willow Red Wine",
@@ -469,7 +469,7 @@ export const drinks = [
       {
         name: "Sweet Kiss Red Wine",
         price: 20000,
-        imageURL: "/drinks/wines/sweet-kiss-red-wine.jpg",
+        imageURL: "/drinks/wines/sweet-kiss-red-wine.png",
       },
       {
         name: "Taylor Red Wine",
@@ -510,12 +510,12 @@ export const drinks = [
       {
         name: "Small Stout",
         price: 2000,
-        imageURL: "/drinks/beers/small-stout.jpg",
+        imageURL: "/drinks/beers/small-stout.png",
       },
       {
         name: "Medium Stout",
         price: 2500,
-        imageURL: "/drinks/beers/medium-stout.jpg",
+        imageURL: "/drinks/beers/medium-stout.png",
       },
       {
         name: "Big Stout",
@@ -525,16 +525,16 @@ export const drinks = [
       {
         name: "Origin Beer",
         price: 2500,
-        imageURL: "/drinks/beers/origin-beer.jpg",
+        imageURL: "/drinks/beers/origin-beer.png",
       },
-      { name: "Malt", price: 1500, imageURL: "/drinks/beers/malt.jpg" },
+      { name: "Malt", price: 1500, imageURL: "/drinks/beers/malt.png" },
       {
         name: "Cranberry",
         price: 12500,
-        imageURL: "/drinks/beers/cranberry.jpg",
+        imageURL: "/drinks/beers/cranberry.png",
       },
-      { name: "Fayrouz", price: 1500, imageURL: "/drinks/beers/fayrouz.jpg" },
-      { name: "Minerals", price: 1000, imageURL: "/drinks/beers/minerals.jpg" },
+      { name: "Fayrouz", price: 1500, imageURL: "/drinks/beers/fayrouz.png" },
+      { name: "Minerals", price: 1000, imageURL: "/drinks/beers/minerals.png" },
       {
         name: "Power Horse",
         price: 3000,
@@ -543,18 +543,18 @@ export const drinks = [
       {
         name: "Can Minerals",
         price: 1000,
-        imageURL: "/drinks/beers/can-minerals.jpg",
+        imageURL: "/drinks/beers/can-minerals.png",
       },
       { name: "Red Bull", price: 3500, imageURL: "/drinks/beers/red-bull.jpg" },
       {
         name: "Blue Bullet",
         price: 2500,
-        imageURL: "/drinks/beers/blue-bullet.jpg",
+        imageURL: "/drinks/beers/blue-bullet.png",
       },
       {
         name: "Black Bullet",
         price: 3000,
-        imageURL: "/drinks/beers/black-bullet.jpg",
+        imageURL: "/drinks/beers/black-bullet.png",
       },
       {
         name: "Water (Small)",
@@ -566,11 +566,11 @@ export const drinks = [
         price: 6000,
         imageURL: "/drinks/beers/palm-wine-full-jug.jpg",
       },
-      { name: "Trophy", price: 2500, imageURL: "/drinks/beers/trophy.jpg" },
+      { name: "Trophy", price: 2500, imageURL: "/drinks/beers/trophy.png" },
       {
         name: "Can Fearless",
         price: 2500,
-        imageURL: "/drinks/beers/can-fearless.jpg",
+        imageURL: "/drinks/beers/can-fearless.png",
       },
       {
         name: "Castle Lite",
@@ -592,9 +592,9 @@ export const drinks = [
         price: 2500,
         imageURL: "/drinks/beers/medium-heineken.jpg",
       },
-      { name: "G/Smooth", price: 2500, imageURL: "/drinks/beers/g-smooth.jpg" },
-      { name: "Tiger", price: 2500, imageURL: "/drinks/beers/tiger.jpg" },
-      { name: "Exotic", price: 3000, imageURL: "/drinks/beers/exotic.jpg" },
+      { name: "G/Smooth", price: 2500, imageURL: "/drinks/beers/g-smooth.png" },
+      { name: "Tiger", price: 2500, imageURL: "/drinks/beers/tiger.png" },
+      { name: "Exotic", price: 3000, imageURL: "/drinks/beers/exotic.png" },
       { name: "Chivita", price: 3500, imageURL: "/drinks/beers/chivita.jpg" },
       {
         name: "Hollandia",
@@ -617,30 +617,30 @@ export const drinks = [
         price: 1000,
         imageURL: "/drinks/beers/can-schweppes.jpg",
       },
-      { name: "Goldberg", price: 2500, imageURL: "/drinks/beers/goldberg.jpg" },
+      { name: "Goldberg", price: 2500, imageURL: "/drinks/beers/goldberg.png" },
       {
         name: "Double Black",
         price: 2000,
-        imageURL: "/drinks/beers/double-black.jpg",
+        imageURL: "/drinks/beers/double-black.png",
       },
       {
         name: "Trophy Stout",
         price: 2500,
         imageURL: "/drinks/beers/trophy-stout.jpg",
       },
-      { name: "Predator", price: 2000, imageURL: "/drinks/beers/predator.jpg" },
+      { name: "Predator", price: 2000, imageURL: "/drinks/beers/predator.png" },
       {
         name: "Vino Gano",
         price: 2500,
-        imageURL: "/drinks/beers/vino-gano.jpg",
+        imageURL: "/drinks/beers/vino-gano.png",
       },
       {
         name: "Osaas Bitters",
         price: 2000,
-        imageURL: "/drinks/beers/osaas-bitters.jpg",
+        imageURL: "/drinks/beers/oosa-bitters.png",
       },
-      { name: "24/7 Gin", price: 2000, imageURL: "/drinks/beers/24-7-gin.jpg" },
-      { name: "Zagg/Can", price: 2000, imageURL: "/drinks/beers/zagg-can.jpg" },
+      { name: "24/7 Gin", price: 2000, imageURL: "/drinks/beers/24-7-gin.png" },
+      { name: "Zagg/Can", price: 2000, imageURL: "/drinks/beers/zagg-can.png" },
       {
         name: "Beta Malt",
         price: 1500,
@@ -654,17 +654,17 @@ export const drinks = [
       {
         name: "Flying Fish",
         price: 2000,
-        imageURL: "/drinks/beers/flying-fish.jpg",
+        imageURL: "/drinks/beers/flying-fish.png",
       },
       {
         name: "Odongwu Bitters",
         price: 2500,
-        imageURL: "/drinks/beers/odongwu-bitters.jpg",
+        imageURL: "/drinks/beers/odongwu-bitters.png",
       },
       {
         name: "Odongwu Hammers",
         price: 2500,
-        imageURL: "/drinks/beers/odongwu-hammers.jpg",
+        imageURL: "/drinks/beers/odongwu-hammers.png",
       },
       {
         name: "Legend Twist",
@@ -674,7 +674,7 @@ export const drinks = [
       {
         name: "Medium Legend",
         price: 2000,
-        imageURL: "/drinks/beers/medium-legend.jpg",
+        imageURL: "/drinks/beers/medium-legend.png",
       },
     ],
   },
