@@ -32,7 +32,6 @@ export const GridList: React.FC<GridListProps> = ({ items = [] }) => {
 };
 
 const Card: React.FC<{ item: CardProps }> = ({ item }) => {
-  console.log(item)
   if (!item) return null;
 
   return (
