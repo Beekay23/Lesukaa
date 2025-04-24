@@ -17,14 +17,11 @@ interface GridListProps {
 }
 
 export const GridList: React.FC<GridListProps> = ({ items = [] }) => {
- return (
+  return (
     <div className="py-3 sm:py-4">
       <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
         {items.map((item, index) => (
-          <Card
-            key={item.id || `${item.name}-${index}`}
-            item={item}
-          />
+          <Card key={item.id || `${item.name}-${index}`} item={item} />
         ))}
       </div>
     </div>
@@ -36,15 +33,15 @@ const Card: React.FC<{ item: CardProps }> = ({ item }) => {
 
   return (
     <div className="overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
-      <div className="relative h-40 sm:h-48 md:h-56 overflow-hidden bg-gray-100">
+      <div className="relative w-full aspect-[4/3] overflow-hidden bg-gray-100">
         {item.imageURL ? (
           <Image
             src={item.imageURL}
             alt={item.name}
-            height={500}
-            width={500}
+            fill
+            className="object-cover"
             loading="lazy"
-            className="h-full"
+            quality={100}
           />
         ) : (
           <div className="absolute h-full w-full flex items-center justify-center bg-gray-200">
@@ -66,10 +63,12 @@ const Card: React.FC<{ item: CardProps }> = ({ item }) => {
       </div>
       <div className="p-3 sm:p-4">
         <h3 className="text-base sm:text-lg font-medium text-gray-900 line-clamp-2">
-          {item.name || 'Untitled Item'}
+          {item.name || "Untitled Item"}
         </h3>
         <p className="mt-1 text-sm sm:text-base text-gray-500 font-medium">
-          {item.price ? `₦${item.price.toLocaleString()}` : 'Price not available'}
+          {item.price
+            ? `₦${item.price.toLocaleString()}`
+            : "Price not available"}
         </p>
       </div>
     </div>
