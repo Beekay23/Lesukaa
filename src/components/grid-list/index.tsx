@@ -19,7 +19,7 @@ interface GridListProps {
 export const GridList: React.FC<GridListProps> = ({ items = [] }) => {
   return (
     <div className="py-3 sm:py-4">
-      <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
         {items.map((item, index) => (
           <Card key={item.id || `${item.name}-${index}`} item={item} />
         ))}
@@ -62,7 +62,7 @@ const Card: React.FC<{ item: CardProps }> = ({ item }) => {
         )}
       </div>
       <div className="p-3 sm:p-4">
-        <h3 className="text-base sm:text-lg font-medium text-gray-900 line-clamp-2">
+        <h3 className="text-sm md:text-base sm:text-lg font-medium text-gray-900 line-clamp-2">
           {item.name || "Untitled Item"}
         </h3>
         <p className="mt-1 text-sm sm:text-base text-gray-500 font-medium">
