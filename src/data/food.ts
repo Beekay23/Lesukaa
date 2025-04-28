@@ -38,11 +38,15 @@ export const food = [
         price: 2000,
         imageURL: "/food/main-course/fried-rice.jpg",
       },
-      { name: "Chips", price: 2500, imageURL: "/food/main-course/chips.jpg" },
+      {
+        name: "Chicken and Chips",
+        price: 2500,
+        imageURL: "/food/main-course/chicken-and-chips.jpg",
+      },
       {
         name: "Native Rice",
         price: 2500,
-        imageURL: "/food/main-course/native-rice.png",
+        imageURL: "/food/main-course/native-rice.jpg",
       },
       {
         name: "Asun Rice",
@@ -274,7 +278,7 @@ export const food = [
       {
         name: "Abacha/Fish/Canda",
         price: 3400,
-        imageURL: "/food/african-dish/abacha-fish-canda.png",
+        imageURL: "/food/african-dish/abacha-fish-canda.jpg",
       },
       {
         name: "Tray of Abacha",
@@ -289,7 +293,7 @@ export const food = [
       {
         name: "Abacha with Fish",
         price: 3000,
-        imageURL: "/food/african-dish/abacha-with-fish.png",
+        imageURL: "/food/african-dish/abacha-with-fish.jpg",
       },
       {
         name: "Abacha with Canda",
