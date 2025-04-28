@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { toSlug } from "@/lib/products";
+import { Loader } from "../loader";
 
 export interface CardProps {
   imageURL?: string;
@@ -29,20 +29,29 @@ export const GridList: React.FC<GridListProps> = ({ items = [] }) => {
 };
 
 const Card: React.FC<{ item: CardProps }> = ({ item }) => {
+  const [isLoading, setIsLoading] = useState(true);
+
   if (!item) return null;
 
   return (
-    <div className="overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+    <div className="overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col h-full">
       <div className="relative w-full aspect-[4/3] overflow-hidden bg-gray-100">
         {item.imageURL ? (
-          <Image
-            src={item.imageURL}
-            alt={item.name}
-            fill
-            className="object-cover"
-            loading="lazy"
-            quality={100}
-          />
+          <>
+            {isLoading && <Loader />}
+            <Image
+              src={item.imageURL}
+              alt={item.name}
+              fill
+              className={`object-cover ${
+                isLoading ? "opacity-0" : "opacity-100"
+              }`}
+              loading="lazy"
+              quality={100}
+              onLoad={() => setIsLoading(false)}
+              onError={() => setIsLoading(false)}
+            />
+          </>
         ) : (
           <div className="absolute h-full w-full flex items-center justify-center bg-gray-200">
             <svg
@@ -61,15 +70,17 @@ const Card: React.FC<{ item: CardProps }> = ({ item }) => {
           </div>
         )}
       </div>
-      <div className="p-3 sm:p-4">
-        <h3 className="text-sm md:text-base sm:text-lg font-medium text-gray-900 line-clamp-2">
+      <div className="p-3 sm:p-4 flex flex-col flex-grow">
+        <h3 className="text-sm md:text-base sm:text-lg font-medium text-gray-900 line-clamp-2 mb-2">
           {item.name || "Untitled Item"}
         </h3>
-        <p className="mt-1 text-sm sm:text-base text-gray-500 font-medium">
-          {item.price
-            ? `₦${item.price.toLocaleString()}`
-            : "Price not available"}
-        </p>
+        <div className="mt-auto">
+          <p className="text-sm sm:text-base text-gray-500 font-medium">
+            {item.price
+              ? `₦${item.price.toLocaleString()}`
+              : "Price not available"}
+          </p>
+        </div>
       </div>
     </div>
   );
