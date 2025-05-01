@@ -15,7 +15,7 @@ interface HeaderProps {
   onSearch?: (query: string) => void;
 }
 
-const PHONE_NUMBERS = ["+234 9016109171", "+234 7057554472"];
+const PHONE_NUMBERS = ["+234 9161091171", "+234 7057554472"];
 const COMPANY_NAME = "Your Company Name";
 
 export const Header: React.FC<HeaderProps> = ({
