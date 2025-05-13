@@ -4,7 +4,7 @@ export const food = [
     items: [
       {
         name: "Egg Fried Rice",
-        price: 2800,
+        price: 3200,
         imageURL: "/food/main-course/egg-fried-rice.png",
       },
       {
