@@ -530,7 +530,7 @@ export const drinks = [
       { name: "Malt", price: 1500, imageURL: "/drinks/beers/malt.png" },
       {
         name: "Cranberry",
-        price: 12500,
+        price: 13500,
         imageURL: "/drinks/beers/cranberry.png",
       },
       { name: "Fayrouz", price: 1500, imageURL: "/drinks/beers/fayrouz.png" },
@@ -608,7 +608,7 @@ export const drinks = [
       },
       {
         name: "Don Simon",
-        price: 7000,
+        price: 7500,
         imageURL: "/drinks/beers/don-simon.jpg",
       },
       { name: "Monster", price: 2500, imageURL: "/drinks/beers/monster.jpg" },
